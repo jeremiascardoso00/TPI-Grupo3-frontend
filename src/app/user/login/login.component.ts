@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
 
 
   login() {
+    debugger
     const user = { email: this.email, password: this.password };
     this.userService.login(user).
       subscribe((data: any) => {
