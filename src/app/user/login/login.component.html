@@ -1,22 +1,33 @@
-<div class="login">
+<div class="container">
+  <div class="login">
     <form class="custom-form" method="post">
-      <h2>Login</h2>
-      <input
-        class="email-input"
-        type="email"
-        [value]="email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        class="pass-input"
-        type="password"
-        [value]="password"
-        name="password"
-        placeholder="Password"
-        required="required"
-      />
-      <button type="submit" (click)="login()">Log in</button>
+      <h2>Iniciar sesion</h2>
+      <div class="login-inputs">
+        <input
+          class="email-input"
+          type="email"
+          [value]="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required="required"
+        />
+        <input
+          class="pass-input"
+          type="password"
+          [value]="password"
+          name="password"
+          placeholder="Contraseña"
+          required="required"
+        />
+      </div>
+      <div>
+
+      </div>
+      
+      <button type="submit" (click)="login()">Iniciar Sesion</button>
+      <div class="bottom">
+        ¿No tienes una cuenta? <a href="">Regístrate</a>
+      </div>
     </form>
   </div>
+</div>
