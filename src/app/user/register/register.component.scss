@@ -1,7 +1,10 @@
 
+$top-size: 5rem;
+$form-width: 25%;
+
   .register {
     position: relative;
-    top: 12rem;
+    top: $top-size;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -11,7 +14,7 @@
   }
 
   .custom-form {
-    width: 20%;
+    width: $form-width;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;

@@ -1,6 +1,6 @@
 <div class="register">
     <div class="custom-form" method="post">
-      <h2>Registrate</h2>
+      <h2>Regístrate</h2>
       <div class="register-inputs">
         <input
           class="email-input"
@@ -36,7 +36,7 @@
         />
 
         <div class="type-select">
-          <label for="type">¿Que rol cumples en la organizacion?</label>
+          <label for="type">¿Qué rol cumples en la organización?</label>
           <select name="type" id="type">
             <option *ngFor="let element of type" value="element">{{element}}</option>
           </select>
@@ -46,9 +46,9 @@
 
       </div>
       
-      <button type="submit" (click)="register()">Registrate</button>
+      <button class="submit-btn" type="submit" (click)="register()">Registrarse</button>
       <div class="bottom">
-        ¿Ya tienes una cuenta? <a (click)="goToLogin()">Inicia Sesion</a>
+        ¿Ya tienes una cuenta? <a (click)="goToLogin()">Inicia sesión</a>
       </div>
     </div>
   
