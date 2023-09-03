@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
-import { UserService } from './services/user.service';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { UserService } from './services/user.service';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    UserModule
+    UserModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

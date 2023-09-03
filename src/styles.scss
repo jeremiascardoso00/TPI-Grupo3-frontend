@@ -1,2 +1,24 @@
 body { margin: 0; padding: 0; }
 
+a:link {
+    color: rgb(29, 155, 240);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(87 27 224);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(68, 107, 235);
+    text-decoration-line: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+a {
+    cursor: pointer;
+}

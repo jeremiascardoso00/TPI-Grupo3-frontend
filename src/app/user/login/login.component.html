@@ -1,6 +1,6 @@
-<div class="container">
+<!-- <div class="container"> -->
   <div class="login">
-    <form class="custom-form" method="post">
+    <div class="custom-form" method="post">
       <h2>Iniciar sesion</h2>
       <div class="login-inputs">
         <input
@@ -26,8 +26,9 @@
       
       <button type="submit" (click)="login()">Iniciar Sesion</button>
       <div class="bottom">
-        ¿No tienes una cuenta? <a href="">Regístrate</a>
+        ¿No tienes una cuenta? <a (click)="goToRegister()">Regístrate</a>
       </div>
-    </form>
+    </div>
+  
   </div>
-</div>
+<!-- </div> -->

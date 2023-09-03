@@ -3,11 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserModule } from './user/user.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  {
-    path: 'app',
-    component: UserModule,
-  }
+  { path: '', redirectTo: '/user/login', pathMatch: 'full' }
 ];
 
 @NgModule({

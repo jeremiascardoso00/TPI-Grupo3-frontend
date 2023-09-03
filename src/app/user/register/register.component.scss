@@ -1,17 +1,5 @@
 
-  // .container {
-  //   min-height:100%;
-  //   background-image: url('../../../assets/school.jpg');
-  //   background-size: cover;
-  //   width: 100%;
-  // }
-
-  // h1 {
-  //   margin: 0;
-  //   padding: 0;
-  // }
-
-  .login {
+  .register {
     position: relative;
     top: 12rem;
     display: flex;
@@ -37,11 +25,20 @@
     color: black;
     min-height: 35rem;
 
-    .login-inputs{
+    .type-select{
+      padding: 1rem 0;
+      select{
+        margin: 0.5rem 0 0;
+        width: 100%;
+        padding: 0.5rem;
+      }
+    }
+
+    .register-inputs{
       width: 90%;
     }
 
-    .email-input,.pass-input{
+    .email-input,.pass-input,.firstname-input,.lastname-input{
       margin: 0.8rem 0;
       padding: 0.8rem 0.5rem;
       border-radius: 0.2rem;
@@ -52,18 +49,7 @@
     }
 
   }
-//   .custom-form input {
-//     display: block;
-//     margin: 2rem 0;
-//     width: 100%;
-//     border-radius: 0.5rem;
-//     padding: 1rem;
-//     border: none;
-//     box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
-//         rgba(0, 0, 0, 0.1);
-//     border: 0 none;
-//     background: #ebf5fc;
-//   }
+
   .custom-form button {
     text-transform: uppercase;
     letter-spacing: 0.15em;
