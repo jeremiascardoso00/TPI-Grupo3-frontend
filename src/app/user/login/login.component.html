@@ -6,7 +6,7 @@
         <input
           class="email-input"
           type="email"
-          [value]="email"
+          [(ngModel)]="email"
           name="email"
           placeholder="Correo electrónico"
           required="required"
@@ -14,7 +14,7 @@
         <input
           class="pass-input"
           type="password"
-          [value]="password"
+          [(ngModel)]="password"
           name="password"
           placeholder="Contraseña"
           required="required"
@@ -27,6 +27,9 @@
       <button class="submit-btn" type="submit" (click)="login()">Iniciar sesión</button>
       <div class="bottom">
         ¿No tienes una cuenta? <a (click)="goToRegister()">Regístrate</a>
+      </div>
+      <div class="bottom">
+        <a (click)="goToHome()">Continuar sin iniciar sesion </a>
       </div>
     </div>
   

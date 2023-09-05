@@ -1,9 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserModule } from './user/user.module';
+import {HomeModule} from './home/home.module'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/user/login', pathMatch: 'full' }
+  // { path: 'home', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then(m => m.UserModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
+  { path: '', redirectTo: '/user/login', pathMatch: 'full' },
+
 ];
 
 @NgModule({

@@ -5,15 +5,16 @@
         <input
           class="email-input"
           type="email"
-          [value]="email"
+          [(ngModel)]="email"
           name="email"
           placeholder="Correo electrónico"
           required="required"
         />
+
         <input
           class="firstname-input"
           type="text"
-          [value]="firstname"
+          [(ngModel)]="firstname"
           name="firstname"
           placeholder="Nombre"
           required="required"
@@ -21,7 +22,7 @@
         <input
           class="lastname-input"
           type="text"
-          [value]="lastname"
+          [(ngModel)]="lastname"
           name="lastname"
           placeholder="Apellido/s"
           required="required"
@@ -29,7 +30,7 @@
         <input
           class="pass-input"
           type="password"
-          [value]="password"
+          [(ngModel)]="password"
           name="password"
           placeholder="Contraseña"
           required="required"
@@ -37,8 +38,8 @@
 
         <div class="type-select">
           <label for="type">¿Qué rol cumples en la organización?</label>
-          <select name="type" id="type">
-            <option *ngFor="let element of type" value="element">{{element}}</option>
+          <select [(ngModel)]="typeSelected" name="type" id="type">
+            <option *ngFor="let element of typeOptions">{{element}}</option>
           </select>
         </div>
       </div>

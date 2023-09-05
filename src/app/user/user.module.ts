@@ -6,6 +6,7 @@ import { UserService } from '../services/user.service';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { UserComponent } from './user.component';
   ],
   providers: [UserService],
   imports: [
+    FormsModule,
     CommonModule,
     UserRoutingModule
   ]

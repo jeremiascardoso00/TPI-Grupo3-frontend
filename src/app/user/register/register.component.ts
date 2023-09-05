@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -9,26 +10,30 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class RegisterComponent {
 
-  email: string = "";
-  password: string = "";
-  firstname: string = "";
-  lastname: string = "";
-  type:string[]= ["Padre","Alumno","Profesor"]
-  user: any;
-  
+  public email: string = "";
+  public password: string = "";
+  public firstname: string = "";
+  public lastname: string = "";
+  public typeOptions:string[]= ["Padre","Estudiante","Profesor", "Personal", "Autoridad"];
+  public typeSelected: string= this.typeOptions[0];
 
   constructor(
     public userService: UserService,
     private router: Router 
-  ) {}
+  ) {
+   
+  }
   
   register() {
 
     debugger
-    this.user.email =this.email
-    this.user.password=this.password
-
-    this.userService.register(this.user).
+    this.userService.register({
+      email: this.email,
+      password: this.password,
+      firstname: this.firstname,
+      lastname: this.firstname,
+      role: this.typeSelected,
+    }).
       subscribe((data: any) => {
         console.log(data);
       }
