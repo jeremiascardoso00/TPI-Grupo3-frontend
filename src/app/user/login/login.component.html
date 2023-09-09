@@ -1,0 +1,37 @@
+<!-- <div class="container"> -->
+  <div class="login">
+    <div class="custom-form" method="post">
+      <h2>Iniciar sesión</h2>
+      <div class="login-inputs">
+        <input
+          class="email-input"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required="required"
+        />
+        <input
+          class="pass-input"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Contraseña"
+          required="required"
+        />
+      </div>
+      <div>
+
+      </div>
+      
+      <button class="submit-btn" type="submit" (click)="login()">Iniciar sesión</button>
+      <div class="bottom">
+        ¿No tienes una cuenta? <a (click)="goToRegister()">Regístrate</a>
+      </div>
+      <div class="bottom">
+        <a (click)="goToHome()">Continuar sin iniciar sesion </a>
+      </div>
+    </div>
+  
+  </div>
+<!-- </div> -->

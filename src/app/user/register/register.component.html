@@ -1,0 +1,56 @@
+<div class="register">
+    <div class="custom-form" method="post">
+      <h2>Regístrate</h2>
+      <div class="register-inputs">
+        <input
+          class="email-input"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required="required"
+        />
+
+        <input
+          class="firstname-input"
+          type="text"
+          [(ngModel)]="firstname"
+          name="firstname"
+          placeholder="Nombre"
+          required="required"
+        />
+        <input
+          class="lastname-input"
+          type="text"
+          [(ngModel)]="lastname"
+          name="lastname"
+          placeholder="Apellido/s"
+          required="required"
+        />
+        <input
+          class="pass-input"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Contraseña"
+          required="required"
+        />
+
+        <div class="type-select">
+          <label for="type">¿Qué rol cumples en la organización?</label>
+          <select [(ngModel)]="typeSelected" name="type" id="type">
+            <option *ngFor="let element of typeOptions">{{element}}</option>
+          </select>
+        </div>
+      </div>
+      <div>
+
+      </div>
+      
+      <button class="submit-btn" type="submit" (click)="register()">Registrarse</button>
+      <div class="bottom">
+        ¿Ya tienes una cuenta? <a (click)="goToLogin()">Inicia sesión</a>
+      </div>
+    </div>
+  
+  </div>

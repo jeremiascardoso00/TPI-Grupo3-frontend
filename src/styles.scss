@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+body { margin: 0; padding: 0; }
+
+a:link {
+    color: rgb(29, 155, 240);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(87 27 224);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(68, 107, 235);
+    text-decoration-line: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+a {
+    cursor: pointer;
+}
+
+
+// .submit-btn{
+
+// }
+
+$hover: 3;
+
+.submit-btn:hover,
+.submit-btn:focus {
+  box-shadow: inset 0 0 0 2em rgb(177, 226, 177);
+}
+
+.submit-btn {  
+    transition: 0.25s;
+    color: saddlebrown;
+    &:hover,
+    &:focus { 
+      border-color: rgb(167, 167, 167);
+      color: #fff;
+    }
+  }
