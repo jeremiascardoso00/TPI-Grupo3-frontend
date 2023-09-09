@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-comment',
@@ -24,5 +25,24 @@ export class CommentComponent {
 
     }
   ]
+
+  public loggedUser
+  
+  public newComment: string= ""
+
+  constructor( ) {
+    this.loggedUser = localStorage.getItem("loggedUser")  || '{}'
+  }
+
+  onSaveComment() {
+    let json = JSON.parse(this.loggedUser)
+    this.comments.push(
+      {
+        username: json.role,
+        message: this.newComment
+      }
+    )
+    console.log(this.newComment)
+  }
 
 }
