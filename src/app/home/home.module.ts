@@ -8,13 +8,17 @@ import { CommentComponent } from './comment/comment.component';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     CommentComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule,
