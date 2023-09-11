@@ -7,12 +7,18 @@ import { FormsModule } from '@angular/forms';
 import { CommentComponent } from './comment/comment.component';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
+import { CarrouselComponent } from './carrousel/carrousel.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    CommentComponent
+    CommentComponent,
+    CarrouselComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule,
