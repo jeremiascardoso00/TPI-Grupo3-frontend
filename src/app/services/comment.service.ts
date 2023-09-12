@@ -11,7 +11,6 @@ export class CommentService {
   constructor(private http: HttpClient) {}
 
   createOne(message: any): Observable<any> {
-debugger
 
     const token =  localStorage.getItem('bearer')
     let headers = new HttpHeaders({
