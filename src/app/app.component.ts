@@ -11,9 +11,10 @@ export class AppComponent {
 
   constructor(){
     localStorage.setItem("loggedUser", JSON.stringify( {
+      id: "",
       email: '',
       password: '',
-      firstname: '',
+      name: '',
       lastname: '',
       role: 'Anónimo'
     }as User));
