@@ -1,0 +1,38 @@
+.navbar {
+    width: 50vh;
+    margin: auto;
+}
+
+.navbar-brand{
+    text-decoration: none;
+}
+
+.logo{    
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: white; 
+}
+
+.nav-link {
+    color: white;    
+    margin-left: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.nav-link:hover{
+    background-color: #e37222;
+    color: white;
+}
+
+.navbar {    
+    width: 100%;
+    background-color: teal;
+    opacity: 0.95;    
+}
+
+.container .navbar-brand {
+    color: white;
+}
