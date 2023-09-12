@@ -10,10 +10,10 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  email: string = "";
-  password: string = "";
-  user: any;
 
+  public email: string = "";
+  public password: string = "";
+ 
   constructor(
     public userService: UserService,
     private route: ActivatedRoute,
@@ -21,13 +21,22 @@ export class LoginComponent {
   ) {}
 
   login() {
-    debugger
-    this.user.email =this.email
-    this.user.password=this.password
-
-    this.userService.login(this.user).
+    this.userService.login({
+      email:this.email,
+      password:this.password
+    }).
       subscribe((data: any) => {
-        console.log(data);
+        console.log(data.user);
+        localStorage.setItem("loggedUser", JSON.stringify( {
+          id: data.user._id,
+          email: data.user.email,
+          password: data.user.password,
+          name: data.user.name,
+          lastname: data.user.lastname,
+          role: data.user.role
+        } as User))
+        localStorage.setItem("bearer", data.data)
+        this.goToHome()
       }
     );
   }
