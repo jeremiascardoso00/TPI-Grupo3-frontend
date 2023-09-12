@@ -13,12 +13,10 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   login(user: any): Observable<any> {
-    debugger
     return this.http.post(environment.url + "/login", user);
   }
 
   register(user: User): Observable<any> {
-    debugger
     return this.http.post(environment.url + "/register", user);
   }
 }

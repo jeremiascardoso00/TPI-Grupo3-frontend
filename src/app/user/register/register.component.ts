@@ -26,16 +26,17 @@ export class RegisterComponent {
   
   register() {
 
-    debugger
     this.userService.register({
       email: this.email,
       password: this.password,
-      firstname: this.firstname,
-      lastname: this.firstname,
+      name: this.firstname,
+      lastname: this.lastname,
       role: this.typeSelected,
     }).
       subscribe((data: any) => {
         console.log(data);
+        this. goToLogin()
+
       }
     );
   }
