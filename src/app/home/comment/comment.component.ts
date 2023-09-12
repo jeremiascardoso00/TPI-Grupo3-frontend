@@ -41,7 +41,6 @@ export class CommentComponent {
   }
 
   getAll() {
-    debugger
     this.commentService.getAll().
       subscribe((data: any) => {
         this.comments = data
