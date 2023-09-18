@@ -1,1 +1,49 @@
-<h1>about works!</h1>
+<div class="container">
+    <div class="about-header">
+        <h1>Quienes somos</h1>
+        <p>Somos una escuela privada comprometida con la excelencia académica. Nuestra misión es brindar una educación integral de calidad que permita a nuestros estudiantes desarrollar todo su potencial.</p>
+            <div class="about-button-container">
+                <button class="btn btn-outline-secondary"
+                    (click)="showDiv.objetive = !showDiv.objetive; showDiv.mission = false; showDiv.values=false">
+		        	Objetivo
+		        </button>
+                <button class="btn btn-outline-secondary"
+                    (click)="showDiv.mission = !showDiv.mission; showDiv.objetive = false; showDiv.values=false">
+		        	Mision
+		        </button>
+                <button class="btn btn-outline-secondary"
+                    (click)="showDiv.values = !showDiv.values; showDiv.mission = false; showDiv.objetive= false">
+		        	Valores
+		        </button>
+            </div>                
+        <div class="row">
+            <div *ngIf="showDiv.objetive">
+                <h2>objetivo</h2>
+                <p>Nuestro objetivo principal es formar personas con sólidos valores éticos, pensamiento crítico y habilidades para ser ciudadanos globales del siglo XXI, capaces de aportar valor a la comunidad. Buscamos despertar en ellos la curiosidad por el conocimiento y el aprendizaje permanente.</p>
+                <p>Contamos con modernas instalaciones y aulas equipadas con la más alta tecnología educativa. Nuestro plantel docente está conformado por profesionales altamente capacitados, con amplia experiencia en la enseñanza de metodologías innovadoras.</p>
+            </div>
+            <div *ngIf="showDiv.mission">
+                <h2>Misión</h2>
+                <p>Nuestra misión es brindar una educación integral de calidad que permita a nuestros estudiantes desarrollar todo su potencial y convertirse en personas de bien para la sociedad.</p>
+            </div>
+            <div *ngIf="showDiv.values">
+                <h2>Valores</h2>
+                <p>Nuestros valores se centran en el respeto, la excelencia y la responsabilidad social. Buscamos formar personas íntegras, comprometidas con su desarrollo personal y capaces de aportar valor a la sociedad.</p>
+            </div>
+        </div>       
+    </div>
+    <div class="badge-section">
+        <div class="badge">
+            <i class="fa-solid fa-apple-whole badge-icon"></i>
+            <p>Nivel<br/> Inicial</p>
+        </div>        
+        <div class="badge">
+            <i class="fa-solid fa-school-flag badge-icon"></i> 
+            <p>Nivel<br/> Primario</p>           
+        </div>
+        <div class="badge">
+            <i class="fa-solid fa-graduation-cap badge-icon"></i>
+            <p>Nivel <br/> Secundario</p>
+        </div>
+    </div>
+</div>

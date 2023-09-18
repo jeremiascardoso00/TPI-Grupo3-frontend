@@ -10,12 +10,14 @@ import { IonicModule } from '@ionic/angular';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    AboutComponent,
     CommentComponent,
     CarrouselComponent,
     HeaderComponent,
