@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent { 
-  showDiv = {    
+  showDiv = {
     objetive : false,
     mission : false,
     values : false,    
