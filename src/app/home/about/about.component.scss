@@ -6,6 +6,8 @@
     border:1px solid blue
 }
 
+//about section
+
 .about-header{
     display: flex;
     flex-direction: column;
@@ -15,6 +17,7 @@
 }
 
 .about-header > h1{
+    color: #234262;
     font-family: 'DM Serif Display', serif;
     font-size: 40px;
 }
@@ -53,11 +56,9 @@
     cursor: pointer;
 }
 
+//about section
 
-
-
-
-
+//badge section
 
 .badge-section{ 
     font-family: 'DM Serif Display', serif;
@@ -118,6 +119,83 @@ div.container >div.badge-section .badge:nth-child(3) .badge-icon {
     color: #1FC2D9;
 }
 
+//badge section
+
+//wellness section
+
+.wellness-section-container{
+    display: flex;    
+    border: 1px solid red;
+    height: 70vh;
+    margin: 10px;
+    height: 60vh;
+}
+
+.wellness-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    font-family: 'DM Serif Display', serif;    
+    width: 45vw;
+    background-color: #2F4358;    
+}
+
+.wellness-section > h2{
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.wellness-icon-container {
+    display: flex;
+    align-items: center;    
+    border-radius: 5%;
+    margin: 10px;
+    height: 80px;
+    width: 250px;    
+    border: 1px solid red;
+}
+
+.wellness-icon-container:hover{
+    background-color: #036a78;
+    cursor: pointer;
+}
+
+.wellness-icon-container > p {
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px
+}
+
+.wellness-icon {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background-color: white;    
+    font-size: 30px;
+    padding: 10px;
+    color: #2F4358
+}
+
+.wellness-info {   
+    width: 55vw;
+}
+
+.wellness-info > div > ul{
+    list-style: none;
+    
+}
+
+//wellness section
+
+//responsive
+
 @media (max-width: 880px){
     .badge-section  {
         flex-direction: column;
@@ -132,3 +210,5 @@ div.container >div.badge-section .badge:nth-child(3) .badge-icon {
         align-items: center;
     }
 }
+
+//responsive
