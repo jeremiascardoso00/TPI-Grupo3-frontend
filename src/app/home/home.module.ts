@@ -11,6 +11,7 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { NewsComponent } from './news/news.component';
 
 
 
@@ -22,6 +23,7 @@ import { AboutComponent } from './about/about.component';
     CarrouselComponent,
     HeaderComponent,
     FooterComponent,
+    NewsComponent,
     
   ],
   imports: [
