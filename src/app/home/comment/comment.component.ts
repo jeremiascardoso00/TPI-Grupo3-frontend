@@ -55,25 +55,26 @@ export class CommentComponent {
     }
     this.commentService.createOne({comment: this.newComment}).
       subscribe((data: any) => {
+        debugger
         if (this.bearer === null){
-          this.comments.push(
+          this.comments.unshift(
             {
               authorName: "anónimo",
               content: this.newComment
             }
           ) 
         } else {
-          this.comments.push(
+          this.comments.unshift(
             {
-              authorName: this.loggedUser.name + "" + this.loggedUser.lastname,
+              authorName: this.loggedUser.name,
               content: this.newComment
             }
           )
         }
+        this.newComment = "";
       }
     );    
     
-    this.newComment = "";
   }
 
 }
