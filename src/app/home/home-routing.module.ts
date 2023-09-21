@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
+import { StudentHealthComponent } from './student-health/student-health.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
 
 const routes: Routes = [
   {
@@ -10,12 +12,20 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'about', // child route path
-        component: AboutComponent, // child route component that the router renders
+        path: '', 
+        component: CarrouselComponent, 
+      },
+      {
+        path: 'about', 
+        component: AboutComponent,
       },
       {
         path: 'news',
-        component: NewsComponent, // another child route component that the router renders
+        component: NewsComponent, 
+      },
+      {
+        path: 'student-health',
+        component: StudentHealthComponent,
       },
     ],
   },

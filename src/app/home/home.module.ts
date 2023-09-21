@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
+import { StudentHealthComponent } from './student-health/student-health.component';
 
 
 
@@ -24,6 +25,7 @@ import { NewsComponent } from './news/news.component';
     HeaderComponent,
     FooterComponent,
     NewsComponent,
+    StudentHealthComponent,
     
   ],
   imports: [
