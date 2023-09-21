@@ -16,8 +16,7 @@
 
 .nav-link {
     color: white;    
-    margin-left: 10px;
-    border-radius: 10%;
+    margin-left: 10px;    
     text-decoration: none;
     border-radius: 15px;
 }
@@ -36,3 +35,17 @@
 .container .navbar-brand {
     color: white;
 }
+
+.navbar-nav > button {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    background-color: #e37222;
+    border-radius: 15px;
+}
+
+.about-header{
+    display: flex;
+    flex-direction: column;
+}
+
