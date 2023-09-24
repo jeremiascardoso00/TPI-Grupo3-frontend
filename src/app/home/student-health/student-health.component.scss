@@ -1,14 +1,11 @@
 //wellness section
 
-.wellness-section-container{
-    display: flex;    
-    border: 1px solid red;
-    height: 70vh;
-    margin: 10px;
-    height: 60vh;
+.wellness-section-container{   
+    display: flex;
+    height: 100vh;
 }
 
-.wellness-section {
+.wellness-section {    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,13 +28,8 @@
     border-radius: 5%;
     margin: 10px;
     height: 80px;
-    width: 250px;    
-    border: 1px solid red;
-}
-
-.wellness-icon-container:hover{
-    background-color: #036a78;
-    cursor: pointer;
+    width: 250px;        
+    
 }
 
 .wellness-icon-container > p {
@@ -60,13 +52,81 @@
     color: #2F4358
 }
 
-.wellness-info {   
+.wellness-info {
+    border-color: teal #2F4358 #2F4358 #2F4358; 
+    border-width: 3px 3px 3px 3px;
+    border-style: solid solid solid solid;
     width: 55vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    background-color: rgb(215, 228, 228);
+}
+
+.wellness-info > :nth-child(1){       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.wellness-info > :nth-child(2){    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.wellness-info > :nth-child(3){  
+    margin-top: -20vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.wellness-info > :nth-child(3) > ul{    
+   margin-left: 50px;
+}
+
+.wellness-info > div { 
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.wellness-info > div > h2{  
+    margin-top: 20vh;  
+    margin-left: 15px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color : #2F4358;  
+    color: white;   
+    width: 70%;  
 }
 
 .wellness-info > div > ul{
+    margin-right: 15px;
     list-style: none;
-    
+    display: flex;
+    flex-direction: column;   
+    width: 80%;    
+}
+
+.wellness-info > div > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    font-size: 20px;       
+}
+
+.wellness-info > div > ul > li > strong {
+    margin-left: 15px;       
 }
 
 //wellness section
@@ -74,16 +134,19 @@
 //responsive
 
 @media (max-width: 880px){
-    .badge-section  {
-        flex-direction: column;
-    } 
-    
-    .about-button-container{       
-        height: 200px;   
-        display: flex; 
-        flex-direction: column;  
-        border: 1px solid green;     
-        justify-content: space-evenly;
-        align-items: center;
+    .wellness-section-container{   
+        flex-direction: column; 
+        margin-bottom: 80vh;   
+    }
+
+    .wellness-section {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .wellness-info {
+        width: 100%;
+        height: 100vh;
+        
     }
 }
