@@ -154,7 +154,10 @@ section {
 
 .footer-distributed .footer-right{
 	width: 20%;
+	
 }
+
+
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
@@ -209,6 +212,11 @@ section {
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
+	}
+
+	.footer-right > iframe {
+		width: 400px;
+		height: 300px;
 	}
 
 }
