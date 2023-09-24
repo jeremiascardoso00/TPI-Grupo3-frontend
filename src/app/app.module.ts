@@ -9,10 +9,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './shared/components/spinner/spinner.component';
 import { LoadingInterceptor } from './shared/interceptor/loading.interceptor';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    SpinnerComponent   
+    SpinnerComponent
   ],
   imports:[
     RouterModule,

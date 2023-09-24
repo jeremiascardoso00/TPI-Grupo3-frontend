@@ -3,7 +3,6 @@
 .container{
     height: 100%;
     width: 100%;
-    
 }
 
 //about section
@@ -13,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .about-header > h1{
@@ -91,7 +89,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+}
+
+.row div {
+    min-height: 12rem;
 }
 
 .badge{    
@@ -144,22 +145,19 @@ div.container >div.badge-section .badge:nth-child(3) .badge-icon {
     color: #1FC2D9;
 }
 
-//badge section
-//responsive
-
-@media (max-width: 880px){
-    .badge-section  {
-        flex-direction: column;
-    } 
+// @media (max-width: 880px){
+//     .badge-section  {
+//         flex-direction: column;
+//     } 
     
-    .about-button-container{       
-        height: 200px;   
-        display: flex; 
-        flex-direction: column;  
-        border: 1px solid green;     
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
+//     .about-button-container{       
+//         height: 200px;   
+//         display: flex; 
+//         flex-direction: column;  
+//         border: 1px solid green;     
+//         justify-content: space-evenly;
+//         align-items: center;
+//     }
+// }
 
 //responsive
