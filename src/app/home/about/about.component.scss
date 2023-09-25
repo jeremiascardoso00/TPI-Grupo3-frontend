@@ -16,12 +16,12 @@
 
 .about-header > h1{
     color: #234262;
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     font-size: 40px;
 }
 
 .about-header > p {
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     font-size: 20px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .about-button-container button {
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -68,14 +68,14 @@
 }
 
 .row > div > h2 {
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     font-size: 30px;
     font-weight: bold;
     
 }
 
 .row > div > p {
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     font-size: 20px;
 }
 
@@ -84,7 +84,7 @@
 //badge section
 
 .badge-section{ 
-    font-family: 'DM Serif Display', serif;
+    //font-family: 'DM Serif Display', serif;
     margin-top: 20px;   
     display: flex;
     justify-content: space-evenly;
@@ -92,7 +92,7 @@
 }
 
 .row div {
-    min-height: 12rem;
+    min-height: 20rem;
 }
 
 .badge{    
@@ -143,6 +143,19 @@ div.container >div.badge-section> :nth-child(3) {
 
 div.container >div.badge-section .badge:nth-child(3) .badge-icon {
     color: #1FC2D9;
+}
+
+.about-img{
+    background-image:url("../../../assets/students3.jpeg");
+    background-size: cover;
+    margin: 0rem 4rem 0 0rem;
+}
+
+.about-section{
+    padding: 2rem 1rem 3rem;
+    margin: 2rem 0;
+    background-color: #68cdfe;
+    border-radius: 0.3rem;
 }
 
 // @media (max-width: 880px){

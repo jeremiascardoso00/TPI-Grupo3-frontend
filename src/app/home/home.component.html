@@ -1,16 +1,14 @@
+<app-header  (sendDataToParent)="eventFromHeader($event)">
+</app-header>
 <div class="container">
 
   <div class="body">
-    <app-header  (sendDataToParent)="eventFromHeader($event)">
-    </app-header>
-    <!-- <app-carrousel></app-carrousel> -->
-    <!-- <app-about id="about" [section]="section"></app-about>
-    <app-comment></app-comment> -->
 
     <router-outlet></router-outlet>
 
-    <app-footer></app-footer>
   </div>
   
 </div>
+<app-footer></app-footer>
+
 
