@@ -1,2 +1,35 @@
-<p>news works!</p>
+
+<div>
+
+    <ion-grid>
+        <ion-card class="news-cards">
+            <img class="news-img" src="../../../assets/novedades.jpg" alt="">
+        </ion-card>
+
+        <img src="" alt="">
+
+        <ion-row  *ngFor="let i of news; let _i = index">
+          <ion-col  *ngFor="let j of i; let _j = index">
+            
+            <ion-card class="news-cards">
+                <div class="news-img">
+                    <img [src]="news[_i][_j].image" alt="">
+                </div>
+                <ion-card-header>
+                  <ion-card-title>{{news[_i][_j].tittle}}</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                    {{news[_i][_j].message}}
+                </ion-card-content>
+              </ion-card>
+           
+           </ion-col>
+       </ion-row>
+      </ion-grid>
+
+</div>
+
+
+
 <app-comment></app-comment> 

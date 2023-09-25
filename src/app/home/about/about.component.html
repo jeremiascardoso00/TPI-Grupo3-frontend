@@ -1,8 +1,22 @@
 <div class="container">
-    <div *ngIf="showDiv.about" class="about-header">
-        <h1><u>Quienes somos</u></h1>
-        <p>Somos una escuela privada comprometida con la excelencia académica. Nuestra misión es brindar una educación integral de calidad que permita a nuestros estudiantes desarrollar todo su potencial.</p>
-            <div class="about-button-container">
+    <div class="about-header">
+
+        <div class="about-section">
+            <ion-grid [fixed]="true">
+                <ion-row>
+                  <ion-col class="about-img"></ion-col>
+                  <ion-col>
+                    <h2>Quienes somos</h2>
+                    <p>Somos una escuela privada comprometida con la excelencia académica. Nuestra misión es brindar una educación integral de calidad que permita a nuestros estudiantes desarrollar todo su potencial.</p>
+                    <p>Somos una institución fundada en el año 2023 con el objetivo de asistir educativamente a niños y adolescentes.
+                        Desde entonces desarrollamos nuestras actividades de modo ininterrumpido en la localidad de Resistencia.</p>
+                    
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </div>  
+  
+        <div class="about-button-container">
                 <button class="btn btn-outline-secondary"
                     (click)="showDiv.objetive = !showDiv.objetive; showDiv.mission = false; showDiv.values=false">
 		        	Objetivo
@@ -15,10 +29,10 @@
                     (click)="showDiv.values = !showDiv.values; showDiv.mission = false; showDiv.objetive= false">
 		        	Valores
 		        </button>
-            </div>                
+        </div>                 
         <div class="row">
             <div *ngIf="showDiv.objetive">
-                <h2><u>objetivo</u></h2>
+                <h2><u>Objetivo</u></h2>
                 <p>Nuestro objetivo principal es formar personas con sólidos valores éticos, pensamiento crítico y habilidades para ser ciudadanos globales del siglo XXI, capaces de aportar valor a la comunidad. Buscamos despertar en ellos la curiosidad por el conocimiento y el aprendizaje permanente.</p>
                 <p>Contamos con modernas instalaciones y aulas equipadas con la más alta tecnología educativa. Nuestro plantel docente está conformado por profesionales altamente capacitados, con amplia experiencia en la enseñanza de metodologías innovadoras.</p>
             </div>
