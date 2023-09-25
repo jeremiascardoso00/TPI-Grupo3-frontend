@@ -12,7 +12,10 @@ export class AboutComponent{
     about: true,   
     objetive : false,
     mission : false,
-    values : false,    
+    values : false, 
+    initialLevel : false,
+    primaryLevel : false,
+    secondaryLevel : false,   
   }  
   ngOnChanges(changes: SimpleChanges) {
        debugger 
@@ -27,7 +30,10 @@ export class AboutComponent{
           about: true,   
           objetive : false,
           mission : false,
-          values : false,    
+          values : false,
+          initialLevel : false,
+          primaryLevel : false,
+          secondaryLevel : false,    
         } 
         break;
       case "level":
@@ -35,7 +41,10 @@ export class AboutComponent{
           about: false,   
           objetive : false,
           mission : false,
-          values : false,    
+          values : false,
+          initialLevel : false,
+          primaryLevel : false,
+          secondaryLevel : false,    
         } 
         break;
     }

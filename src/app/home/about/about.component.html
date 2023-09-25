@@ -47,17 +47,86 @@
         </div>       
     </div>
     <div class="badge-section">
-        <div class="badge">
+        <div class="badge"
+        (click)="showDiv.initialLevel = !showDiv.initialLevel; showDiv.primaryLevel = false ; showDiv.secondaryLevel = false">
             <i class="fa-solid fa-apple-whole badge-icon"></i>
             <p>Nivel<br/> Inicial</p>
         </div>        
-        <div class="badge">
+        <div class="badge"
+        (click)="showDiv.primaryLevel = !showDiv.primaryLevel; showDiv.initialLevel = false; showDiv.secondaryLevel = false">
             <i class="fa-solid fa-school-flag badge-icon"></i> 
             <p>Nivel<br/> Primario</p>           
         </div>
-        <div class="badge">
+        <div class="badge"
+        (click)="showDiv.secondaryLevel = !showDiv.secondaryLevel; showDiv.initialLevel = false ; showDiv.primaryLevel= false">
             <i class="fa-solid fa-graduation-cap badge-icon"></i>
             <p>Nivel <br/> Secundario</p>
         </div>
-    </div>    
+    </div>
+    <div class="levels-section">
+        <div *ngIf="showDiv.initialLevel" id="initial-level" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../../../assets/educacionInicial_slide1.jpg" alt="First slide A">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionInicial_slide2.jpg" alt="Second slide A">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionInicial_slide3.jpg" alt="Third slide A">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#initial-level" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#initial-level" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div *ngIf="showDiv.primaryLevel" id="primary-level" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../../../assets/educacionPrimaria_slide1.jpg" alt="First slide B">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionPrimaria_slide2.jpg" alt="Second slide B">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionPrimaria_slide3.jpg" alt="Third slide B">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#primary-level" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#primary-level" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div *ngIf="showDiv.secondaryLevel" id="secondary-level" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../../../assets/educacionSecundaria_slide1.jpg" alt="First slide C">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionSecundaria_slide2.jpg" alt="Second slide C">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/educacionSecundaria_slide3.jpg" alt="Third slide C">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#secondary-level" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#secondary-level" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
 </div>
