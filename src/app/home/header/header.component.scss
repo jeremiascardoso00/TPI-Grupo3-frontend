@@ -1,5 +1,17 @@
+.container {
+    height: 60px;
+    width: 95%;
+    padding: 0%;
+    margin: auto;
+}
+
 .navbar-brand{
     text-decoration: none;
+}
+
+.a-font {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .logo{    
@@ -34,6 +46,7 @@
     margin: 0px 5px 0px 5px;
     background-color: #e37222;
     border-radius: 15px;
+    font-weight: bold;
 }
 .navbar-nav > button:hover {
     color: black !important; 

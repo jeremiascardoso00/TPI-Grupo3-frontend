@@ -1,7 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+
 .app-body {
   position: absolute;
   width: 100%;
   height: 100%;
   // overflow-y: scroll;
   overflow-y: auto;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
